@@ -15,3 +15,7 @@ We use AI to generate a starter business model canvas for you, and even give you
 Just tap _Download Presentation_ and off you go! 🚀
 
 ![image](https://user-images.githubusercontent.com/4107912/228467286-79b6a92a-22f6-4a14-827a-9d974aa62d7f.png)
+
+# To run locally
+1. Set OPENAI_API_KEY environment variable.
+2. Run `streamlit run leanCanvasDeck.py` to run the app locally.
