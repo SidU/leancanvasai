@@ -15,7 +15,8 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 st.title("Lean Canvas GPT")
-st.markdown("Create a Lean Canvas presentation for your business idea in seconds")
+st.markdown("⚡️ _Create a Lean Canvas presentation for your business idea in seconds_")
+st.markdown("The [lean business canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas) is a visual tool for quickly outlining and evaluating key aspects of a business idea, including the problem, solution, value proposition, customer segments, and financials.")
 image = image.open('demo_image.png')
 st.image(image, use_column_width=True)
 
