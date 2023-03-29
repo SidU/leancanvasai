@@ -5,6 +5,7 @@ import json
 from pptx import Presentation
 import streamlit as st
 import io
+from PIL import Image as image
 
 # Configure our page.
 st.set_page_config(
@@ -14,6 +15,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 st.title("Lean Canvas GPT")
+st.markdown("Create a Lean Canvas presentation for your business idea in seconds")
+image = image.open('demo_image.png')
+st.image(image, use_column_width=True)
 
 # Customize the footer
 hide_footer_style = """
