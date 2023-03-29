@@ -52,7 +52,7 @@ def generate_text(prompt):
 # Collect the idea_description from the user via streamlit. Wait for user to hit enter.
 idea_description = st.text_input("Enter your idea description here:")
 
-if st.button("✨ Generate Presentation"):
+def render_page(idea_description):
     # Generate the contents of the Lean Canvas for the idea in JSON format
     lean_canvas_prompt = f"Create a lean canvas for this business idea: {idea_description}\n\nYour response must be in JSON format like: {{ \"Problem\": [\"foo\", \"bar\"] }}\n\nTry to add 3 bullet points in each category.\n\nYour response:\n\nAI-RESPONSE:"
     lean_canvas_text = generate_text(lean_canvas_prompt)
@@ -105,3 +105,10 @@ if st.button("✨ Generate Presentation"):
     )
 
     st.success(f'PowerPoint presentation "{fancy_name}.pptx" has been created successfully.')
+    
+
+if st.button("✨ Generate Presentation"):
+    try:
+        render_page(idea_description)
+    except Exception as e:
+        st.error(f"Something went wrong: {e}")
