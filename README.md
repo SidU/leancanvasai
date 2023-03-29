@@ -1,5 +1,7 @@
 # Lean Canvas GPT ✨
-AI Powered [Business Model Canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas) Deck Generator
+AI Powered [Business Model Canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas) Deck Generator.
+
+🚀 Live @ https://leancanvas-gpt.streamlit.app/
 
 # Get your creative juices flowing
 Just provide a description of your idea and hit _Generate Presentation_. 
